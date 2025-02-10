@@ -133,7 +133,7 @@ export async function fetchInvoicesPages(query: string) {
   }
 }
 
-export async function fetchInvoiceById(id: string) {
+export async function fetchInvoiceById(id: number) {
   try {
     const data = await client.sql<InvoiceForm>`
       SELECT
